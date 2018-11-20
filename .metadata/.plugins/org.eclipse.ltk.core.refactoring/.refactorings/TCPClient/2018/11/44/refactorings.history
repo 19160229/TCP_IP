@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FileTrans.java&apos; to &apos;TCPServer/src/server&apos;&#x0D;&#x0A;- Original project: &apos;TCPClient&apos;&#x0D;&#x0A;- Destination element: &apos;TCPServer/src/server&apos;&#x0D;&#x0A;- Original element: &apos;client.FileTrans.java&apos;" description="Copy compilation unit" destination="=TCPServer/src&lt;server" element1="/src&lt;client{FileTrans.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1541217867270" units="1" version="1.0"/>
+</session>

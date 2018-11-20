@@ -1,0 +1,96 @@
+package server;
+
+import java.io.*;
+import java.net.*;
+import java.nio.file.Path;
+
+public class FileTrans {
+	private String filePath;
+	private Socket socket;
+
+	public FileTrans() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public FileTrans(String filePath, Socket socket) {
+		this.filePath = filePath;
+		this.socket = socket;
+	}
+
+	public void DownloadFile() {
+		try {
+//			DataInputStream inputStream = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
+//			int bufferSize = 8192;
+//			byte[] buf = new byte[bufferSize];
+//			long passedlen = 0;
+//			long len = 0;
+//			DataOutputStream fileOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(filePath)));
+//			len = inputStream.readLong();
+//			System.out.println("文件的长度为：" + len);
+//			System.out.println("开始接收文件！");
+//			while (true) {
+//				int read = 0;
+//				if (inputStream != null) {
+//					read = inputStream.read();
+//				}
+//				passedlen += len;
+//				if (read == -1) {
+//					break;
+//				}
+//				fileOut.write(buf, 0, read);
+//				fileOut.flush();
+//				double a = Double.valueOf(String.valueOf(passedlen)) / Double.valueOf(String.valueOf(len)) * 100;
+//				System.out.println("文件完成度：" + a);
+//			}
+//			fileOut.close();
+			InputStream in=socket.getInputStream();
+			String line="";
+			byte[] lenByte=new byte[1];
+			while(!line.endsWith("\r\n")){
+				in.read(lenByte);
+				String str=new String(lenByte);
+				line+=str;
+			}
+			int len=Integer.parseInt(line.substring(0, line.length()-2));
+			OutputStream out=new FileOutputStream(filePath);
+			byte[] bytes=new byte[len];
+			in.read(bytes);
+			out.write(bytes);
+			System.out.println("接收到来自："+socket.getInetAddress().getHostAddress()+"上传的文件"+filePath);
+			out.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void FileUp(){
+		try {
+			File file=new File(filePath);
+			DataInputStream fis=new DataInputStream(new FileInputStream(filePath));
+			DataOutputStream ps=new DataOutputStream(socket.getOutputStream());
+			ps.writeLong((long)file.length());
+			ps.flush();
+			int bufferSize=8192;
+			byte[] buf=new byte[bufferSize];
+			while(true){
+				int read=0;
+				if(fis!=null){
+					read=fis.read();
+				}
+				if(read==-1){
+					break;
+				}
+				ps.write(buf,0,read);
+				ps.flush();
+			}
+			fis.close();
+			ps.close();
+			socket.close();
+			System.out.println("文件传输完成");
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+}

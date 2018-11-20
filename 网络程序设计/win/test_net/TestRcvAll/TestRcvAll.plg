@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestRcvAll - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP79.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/TestRcvAll.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\软件资料文档\网络程序设计\WIN\TEST_NET\TestRcvAll\myRecvAll.cpp"
+"E:\软件资料文档\网络程序设计\WIN\TEST_NET\TestRcvAll\parser.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP79.tmp" 
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP7A.tmp" with contents
+[
+ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/TestRcvAll.pdb" /debug /machine:I386 /out:"Debug/TestRcvAll.exe" /pdbtype:sept 
+".\Debug\myRecvAll.obj"
+".\Debug\parser.obj"
+]
+Creating command line "link.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP7A.tmp"
+<h3>Output Window</h3>
+Compiling...
+myRecvAll.cpp
+parser.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/TestRcvAll.bsc"  ".\Debug\myRecvAll.sbr" ".\Debug\parser.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TestRcvAll.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

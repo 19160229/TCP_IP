@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: myTraceRoute - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP54A.tmp" with contents
+[
+/nologo /Zp1 /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/myTraceRoute.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\软件资料文档\网络程序设计\WIN\myTraceRoute\mytracert.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP54A.tmp" 
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP54B.tmp" with contents
+[
+ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/myTraceRoute.pdb" /debug /machine:I386 /out:"Debug/myTraceRoute.exe" /pdbtype:sept 
+".\Debug\mytracert.obj"
+]
+Creating command line "link.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP54B.tmp"
+<h3>Output Window</h3>
+Compiling...
+mytracert.cpp
+e:\软件资料文档\网络程序设计\win\mytraceroute\mytracert.cpp(220) : warning C4101: 'tick' : unreferenced local variable
+e:\软件资料文档\网络程序设计\win\mytraceroute\mytracert.cpp(289) : warning C4101: 'ret' : unreferenced local variable
+e:\软件资料文档\网络程序设计\win\mytraceroute\mytracert.cpp(295) : warning C4101: 'ipopt' : unreferenced local variable
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/myTraceRoute.bsc"  ".\Debug\mytracert.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+myTraceRoute.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

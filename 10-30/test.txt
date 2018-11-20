@@ -1,0 +1,3 @@
+This is a testing file.
+Hello TCP.
+中文行不行呢？！！

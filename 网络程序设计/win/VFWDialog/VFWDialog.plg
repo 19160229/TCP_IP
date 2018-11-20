@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GraghDialog - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP93.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/VFWDialog.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\hidownload\VFWDialog\GraghDialogDlg.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP93.tmp" 
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP94.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/VFWDialog.pdb" /debug /machine:I386 /nodefaultlib:"libcmt.lib" /out:"Debug/VFWDialog.exe" /pdbtype:sept 
+.\Debug\AddRemote.obj
+.\Debug\AddressBook.obj
+.\Debug\AudioPlay.obj
+.\Debug\AudioRec.obj
+.\Debug\BtnST.obj
+.\Debug\DSocket.obj
+.\Debug\G729aCompress.obj
+.\Debug\GraghDialog.obj
+.\Debug\GraghDialogDlg.obj
+.\Debug\RemoteDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\TextChatDlg.obj
+.\Debug\VideoCapture.obj
+.\Debug\VideoCodec.obj
+.\Debug\GraghDialog.res
+]
+Creating command line "link.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP94.tmp"
+<h3>Output Window</h3>
+Compiling...
+GraghDialogDlg.cpp
+Linking...
+Creating temporary file "D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP95.tmp" with contents
+[
+/nologo /o"Debug/VFWDialog.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\AddRemote.sbr
+.\Debug\AddressBook.sbr
+.\Debug\AudioPlay.sbr
+.\Debug\AudioRec.sbr
+.\Debug\BtnST.sbr
+.\Debug\DSocket.sbr
+.\Debug\G729aCompress.sbr
+.\Debug\GraghDialog.sbr
+.\Debug\GraghDialogDlg.sbr
+.\Debug\RemoteDlg.sbr
+.\Debug\TextChatDlg.sbr
+.\Debug\VideoCapture.sbr
+.\Debug\VideoCodec.sbr]
+Creating command line "bscmake.exe @D:\DOCUME~1\mcm\LOCALS~1\Temp\RSP95.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+VFWDialog.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

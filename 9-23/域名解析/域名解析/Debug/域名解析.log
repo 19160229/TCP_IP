@@ -1,0 +1,4 @@
+﻿  源.cpp
+c:\data\internet\9-23\域名解析\域名解析\源.cpp(18): error C3861: “getaddrinfo”: 找不到标识符
+c:\data\internet\9-23\域名解析\域名解析\源.cpp(31): error C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明

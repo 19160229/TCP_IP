@@ -1,0 +1,38 @@
+package client;
+import java.net.*;
+import java.io.*;
+
+public class TCPClient {
+
+	public static void Client() throws Exception {
+		Socket cs=new Socket(InetAddress.getByName("127.0.0.1"), 9999);
+		System.out.println("客户端向服务器发起连接...");
+		BufferedReader br=new BufferedReader(new InputStreamReader(cs.getInputStream()));
+		PrintWriter pw=new PrintWriter(cs.getOutputStream());
+//		BufferedReader kbr=new BufferedReader(new InputStreamReader(System.in));
+//		String line=null;
+//		do {
+//			line=kbr.readLine();
+//			pw.println(line);
+//			pw.flush();
+//			System.out.println("服务器响应："+br.readLine());
+//		} while (!"quit".equalsIgnoreCase(line));
+		FileTrans fileTrans=new FileTrans("D:\\Data\\Internet\\10-30\\test.txt",cs);
+		fileTrans.FileUp();
+		System.out.println("再见！");	
+		pw.close();
+		br.close();
+		cs.close();
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Client();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
