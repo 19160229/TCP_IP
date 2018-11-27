@@ -2,7 +2,7 @@
 //org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
 ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
 ColorsAndFontsPreferencePage.selectedElement=Fterminal.views.view.font.definition
-PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
 REMOTE_COMMANDS_VIEW_FONT=1|YaHei Consolas Hybrid|10.125|0|WINDOWS|1|-27|0|0|0|400|0|0|0|0|3|2|1|49|YaHei Consolas Hybrid;
 eclipse.preferences.version=1
 org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|YaHei Consolas Hybrid|10.125|0|WINDOWS|1|-27|0|0|0|400|0|0|0|0|3|2|1|49|YaHei Consolas Hybrid;
