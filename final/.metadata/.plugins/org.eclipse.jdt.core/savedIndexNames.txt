@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+D:\Oliver_Git\TCP_IP\final\.metadata\.plugins\org.eclipse.jdt.core
+3987265475.index
+1457188047.index
+2193147924.index

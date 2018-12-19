@@ -1,0 +1,27 @@
+package udpDemo;
+
+import java.net.*;
+import java.util.Scanner;
+
+public class UDPClient {
+
+	public static void main(String[] args) throws Exception {
+		DatagramSocket ds = new DatagramSocket();
+		Scanner sc = new Scanner(System.in);
+		byte[] rBuf = new byte[64 * 1024];
+		DatagramPacket rdp = new DatagramPacket(rBuf, 64 * 1024);
+		String line = null;
+		do {
+			line = sc.nextLine();
+			DatagramPacket sdp = new DatagramPacket(line.getBytes(), 0, line.getBytes().length,
+					InetAddress.getByName("127.0.0.1"), 9999);
+			ds.send(sdp);
+			ds.receive(rdp);
+			String res = new String(rdp.getData(), rdp.getOffset(), rdp.getLength());
+			System.out.println("¿Í»§¶ËÏìÓ¦:" + res);
+		} while (!"quit".equalsIgnoreCase(line));
+		ds.close();
+		sc.close();
+	}
+
+}
